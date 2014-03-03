@@ -7,6 +7,17 @@ import com.diudiustudio.connection.result.Result;
 import com.diudiustudio.exception.DException;
 
 public class DAction implements Action {
+	public static DAction instance;
+
+	private DAction() {
+	}
+
+	public static DAction getInstance() {
+		if (instance == null) {
+			instance = new DAction();
+		}
+		return instance;
+	}
 
 	@Override
 	public String getAction(int index) {
