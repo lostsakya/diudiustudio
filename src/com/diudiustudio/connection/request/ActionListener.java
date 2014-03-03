@@ -5,9 +5,9 @@ import com.android.volley.Response.Listener;
 import com.android.volley.VolleyError;
 
 /**
- * 负责联网后返回错误及返回数据的处理
+ * Use one listener to handle response.
  * 
- * @author Hongjian.Liu 10:35:55 AM Nov 21, 2013
+ * @author diudiustudio
  * @param <T>
  */
 public interface ActionListener<T> extends Listener<T>, ErrorListener {
